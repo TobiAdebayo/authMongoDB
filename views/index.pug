@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='stylesheet', href='/stylesheets/index.css')
+        title #{title}
+    body 
+    block content 
+    .login-box
+        h2 login
+        form(action="/signup" method="POST") 
+          .user-box
+              input(type='text' name='' required)
+              label Username
+          .user-box
+              input(type='password' name='' required)
+              label Password
+          .button-form
+              button.btn(type="submit") Login
+              #register
+                | don&apos;t have an account yet?
+                a(href='/signup')  register
