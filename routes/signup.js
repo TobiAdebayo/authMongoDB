@@ -8,7 +8,7 @@ router.get('/signup', function (req, res, next) {
 });
 
 router.post('/', function (req, res, next) {
-  res.render('index', { title: 'Login' });
+  res.render('index', { title: 'Signup' });
 });
 
 module.exports = router;
